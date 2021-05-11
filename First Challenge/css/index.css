@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+body{
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.board{
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame{
+  width: 60%;
+  height: 75%;
+  background-color: #FFF;
+  border-radius: 30px;
+  box-shadow: 0 40px 25px -6px rgba(0,0,0, 0.2);
+  display: flex;
+}
+.frame-images{
+  width: 50%;
+  height: 100%;
+}
+.images{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.images-desktop img:first-child{
+  width: 200%;
+  position: relative;
+  right: 470px;
+  bottom: 250px;
+  z-index: 1;
+}
+.images-desktop img:last-child{
+  width: 100%;
+  height: 70%;
+  position: relative;
+  right: 70px;
+  bottom: 750px;
+  z-index: 2;
+}
+.float-img{
+  height: 36%;
+  position: relative;
+  right: 80px;
+  bottom: 280px;
+  z-index: 3;
+}
+.images-mobile{
+  display: none;
+}
+
+.frame-texts{
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 40px;
+}
+.text-title h1{
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 43px;
+  box-sizing: border-box;
+  color: #1E1F36;
+  outline-offset: 15px;
+}
+.accordion-item{
+  height: 35px;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 12px;
+  padding: 3px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  transition: 0.5s;
+  color: #4B4C5F;
+}
+.question{
+  cursor: pointer;
+  height: 15px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+
+}
+.question:hover{
+  font-weight: 700;
+  color:  #F47B56;
+} 
+.answer{
+  opacity: 0;
+  max-height: 0;
+}
+i{
+  color: black;
+  width: 30px;
+  color: #F47B56;
+  text-align: end;
+}
+#iconUp{
+  display: none;
+}
+.accordion-item-changes{
+  height: 90px;
+  transition: 0.5s;
+}
+.accordion-item-changes .question{
+  color: #1E1F36;
+}
+.accordion-item-changes .answer{
+  opacity: 1;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Kumbh Sans", sans-serif;
+  color: #787887;
+  max-height: 20px;
+  padding-bottom: 10px;
+}
+.accordion-item-changes #iconDowm{
+  display: none;
+}
+.accordion-item-changes #iconUp{
+  display: block;
+}

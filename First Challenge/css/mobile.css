@@ -1,0 +1,62 @@
+@media (max-width: 768px){
+  .body{
+    overflow: visible;
+    box-sizing: border-box;
+  }
+  .frame{
+    width: 88%;
+    display: block;
+    justify-content: center;
+  }
+  .images{
+    overflow: visible !important;
+  }
+  .frame-images, .frame-texts{
+    width: 100%;
+    height: 15%;
+  }
+  .images-mobile{
+    overflow: visible;
+  }
+  .images-desktop, .float-img{
+    display: none;
+  }
+  .images-mobile {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .images-mobile img:first-child{
+    width: 240px;
+    height: 104px; 
+  }
+  .images-mobile img:last-child{
+    width: 266px;
+    height: 196px;
+    position: relative;
+    top: -212px;
+    left: -15px;
+  }
+  .frame-texts{
+    width: 100%;
+    height: 85%;
+    padding: 5%;
+  }
+  .text-title h1{
+    text-align: center;
+  }
+  .text-doubts{
+    height: 80%
+  }
+  .accordion-item{
+    margin-bottom: 30px;
+    padding-top: 5px;
+    justify-content: space-between;
+  }
+  .accordion-item-changes{
+    height: 100px;
+  }
+  
+
+}
