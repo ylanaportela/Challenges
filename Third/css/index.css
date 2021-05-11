@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+body{
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  min-width: inherit;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+.container{
+  text-align: center;
+}
+
+/* Section Image */
+
+.images{
+  width: 100%;
+  max-height: 50vh;
+  margin: 0px auto 0px;
+  margin-top: 13%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-background{
+  padding: 0px;
+  z-index: -1;
+}
+
+.image-background img{
+  max-height: 46vh;
+  width: 90%;
+}
+
+.images-profile{
+  width: 60%;
+  max-height: inherit;
+  margin-top: -80%;
+}
+
+.images-profile img{
+  display: none;
+}
+
+.images-profile img.active{
+  display: block;
+  width: 65vw;
+  height: 39vh;
+  box-shadow: 0px 40px 50px -30px rgba(36, 36, 113, 0.495001);
+}
+
+.slider{
+  position: fixed;
+  top: 43%;
+  left: 43%;
+  width: 25%;
+  height: 7%;
+  display: flex;
+  padding: 5%;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider img{
+  width: 11px;
+  height: 15px;
+}
+/* Section Text */
+
+.text{
+  width: 100%;
+  min-height: 30vh;
+  margin-top: 9%;
+}
+
+.image-quote img{
+  width: 15%;
+  min-height: 7vh;
+  z-index: -1;
+}
+
+.text-testimonial{
+  width: 85%;
+  margin: 0 auto;
+  margin-top: -10%;
+  color:  #202047;
+}
+
+.text-testimonial > div.active{
+  display: block;
+  transition: all 5s ease-in;
+}
+
+.text-testimonial div{
+  font-size: 18px;
+}
+
+.text-testimonial p{
+  opacity: 0.5;
+}
+
+.title div:first-child{
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;  
+}
+
+.title div:last-child{
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #B9B9CE;
+}
+
+.text-testimonial .testimonial-first, .text-testimonial .testiomonial-second{
+  display: none;
+}
+
+.image-design{
+  height: 10vh;
+  width: 75%;
+  padding-top: 2%;
+}
+
+.image-design img{
+  width: 100%;
+}
+
+.attribution {
+  display: none;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
