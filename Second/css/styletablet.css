@@ -1,0 +1,112 @@
+@media (min-width: 768px){
+  body{
+    min-height: 100vh;
+    width: 100%;
+    background-size: 65% 73%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0px;
+    color: white;
+    background-color: #121725;
+    z-index: -1;
+  }
+  body::before{
+    position: none;
+    background-image: none;
+  }
+  .frame{
+    width: 80%;
+    height: 100%;
+    padding: 0px;
+  }
+  .frame-image img:first-child{
+    opacity: 0.8;
+  }
+  .frame-image img:last-child{
+    display: none;
+  }
+  .frame-image{
+    position: fixed;
+    right: 0%;
+    display: block;
+    z-index: -1;
+  }
+  .frame-logo{
+    width: 40%;
+    height: 25vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0%;
+    padding-top: 10%;
+  }
+  .frame-text{
+    height: 39vh;
+    background: #121725;
+    padding-top: 20%;
+    text-align: left;
+    z-index: -1;
+  }
+  .text-title h2:first-child , .text-title h2:last-child{
+    font-size: 44px;
+    margin: 0%;
+    opacity: 0.8;
+  }
+  p{
+    width: 80%;
+    font-size: 18px;
+    margin-bottom: 5%;
+    opacity: 0.6;
+  }
+  .plataforms{
+    width: 70%;
+    position: fixed;
+    top: 71%;
+    min-height: 50px;
+    margin: 0%;
+    align-items: center;
+    opacity: 0.6;
+  }
+  .plataforms img{
+    height: 100%;
+    color: #5A668A;
+  }
+  .plataforms img:first-child{
+    width: 96px;
+    height: 29px;
+    color: #5A668A;
+  }
+  .plataforms img:nth-child(3){
+    width: 125px;
+    height: 18px;
+  }
+  .frame-input{
+    display: flex;
+  }
+  .frame-input input{
+    box-sizing: border-box;
+    width: 80%;
+    border-radius: 60px;
+    font-weight: 400;
+  }
+  .frame-input button {
+    width: 25%;
+    height: 6%;
+    position: fixed;
+    left: 36%;
+    border-radius: 60px;    
+  }
+  .image-decoration{
+    display: block;
+    position: fixed;
+    bottom: 0%;
+    left: 5%;
+  }
+  .error-message{
+    height: 5%;
+    position: absolute;
+    top: 69%;
+    display: none;
+  }
+}
