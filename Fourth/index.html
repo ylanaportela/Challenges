@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/Challenges/Fourth/style/index.css">
+  <link rel="stylesheet" href="/Fourth/style/index.css">
+  <link rel="stylesheet" href="/Fourth/style/desktop.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Interactive pricing component</title>
 </head>
 
@@ -15,7 +17,10 @@
     <div class="title">
       <div class="text">
         <h2>Simple, traffic-based pricing</h2>
-        <p>Sign-up for our 30-day trial.<br> No credit card required.</p>
+        <div class="text-paragraph">
+          <p>Sign-up for our 30-day trial.</p>
+          <p>No credit card required.</p>
+        </div>
       </div>
     </div>
 
@@ -24,37 +29,41 @@
   <section class="frame">
 
     <div class="cost-monthly">
+
+      <div class="informations">
         <div class="value-range">
           <div class="value-pageview">100K</div>
           <div>Pageviews</div>
         </div>
 
-        <div class="slidecontainer">
-
-          <input class="range-slider" type="range" min="10.000" max="1.000.000">
-
-        </div>
-
         <div class="price">
-          <span class="value-price"> <p>$</p> <p class="value">16.00</p> <p>/month</p></span>
-          
+          <span class="value-price">
+            <p>$</p>
+            <p class="value">16.00</p>
+            <p>/ month</p>
+          </span>
         </div>
+      </div>
+
+      <div class="slidecontainer">
+        <input class="range-slider" type="range" min="10.000" max="1.000.000">
+      </div>
     </div>
 
     <div class="cost-year-discount">
-      
-        <div>Monthly Billing</div>
-        
-        <div>
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label>
-        </div>
 
-        <div>Yearly Billing</div>
-        <div class="discount">-25%</div>
-      
+      <div>Monthly Billing</div>
+
+      <div>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <div>Yearly Billing</div>
+      <div class="discount"><div>-25% </div> <div class="text-discount">discount</div> </div>
+
     </div>
 
     <hr>
@@ -63,15 +72,13 @@
       <ul>
         <li>Unlimited websites</li>
         <li>100% data ownership</li>
-        <li> Email reports </li>
+        <li>Email reports</li>
       </ul>
-    </div>
 
-    <div class="test">
-      <button>Start my trial</button>   
+      <button>Start my trial</button>
     </div>
-
   </section>
   </div>
 </body>
+
 </html>
