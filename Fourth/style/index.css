@@ -73,7 +73,6 @@ body{
 }
 
 .value-range{
-  margin-bottom: 3%;
   display: flex;
   justify-content: center;
   font-size: 12px;
@@ -84,21 +83,45 @@ body{
   text-transform: uppercase;
 }
 
-.value-pageview{
+.pageview{
   margin-right: 2%;
 }
+
 .slidecontainer{
-  width: 100%;
+  width: 84%;
+  margin: 0 auto;
   position: relative;
   bottom: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.progress{
+  height: 8px;
+  max-height: 8px;
+  width: 0%;
+  text-align: start;
+  display: inline-block;
+  background-color: #A4F3EB;
+  background-position-x: 20%;
+  position: absolute;
+  z-index: 1;
 }
 
 input[type=range]{
   -webkit-appearance: none;
   max-height: 8px;
-  width: 84%;
-  background: #A4F3EB;
+  width: 100%;
+  background: #ECF0FB;
   border-radius: 5px;
+  border: none;
+  position: absolute;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  z-index: 1;
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -112,10 +135,18 @@ input[type=range]::-webkit-slider-thumb {
   background-position: center;
   background-color: #10D8C4;
   box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+  top: -15px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.range-slider::-webkit-slider-thumb:hover{
+  background-color: #7AEADF;
+  z-index: 2 !important;
 }
 
 .price{
-  margin-top: 20%;
+  margin-top: 25%;
 }
 
 .value-price{
@@ -141,7 +172,8 @@ input[type=range]::-webkit-slider-thumb {
   width: 85%;
   height: 5%;
   margin: 0 auto;
-  margin-bottom: 12%;
+  margin-bottom: 10%;
+  margin-top: 8%;
   display: flex;
   justify-content: space-evenly;
   font-size: 12px;
@@ -158,6 +190,7 @@ input[type=range]::-webkit-slider-thumb {
   width: 43px;
   height: 22px;
   box-shadow: none;
+  cursor: pointer;
 }
 
 .slider {
@@ -223,7 +256,7 @@ hr{
   height: 1px;
   border: none;
   background-color: #ECF0FB;
-  margin-bottom: 8%;
+  margin-bottom: 6%;
 }
 
 .services{
@@ -247,7 +280,7 @@ li{
 
 button{
   width: 55%;
-  height: 10%;
+  height: 25%;
   margin: 0;
   margin-top: 2%;
   border-radius: 20px;
@@ -256,4 +289,5 @@ button{
   font-weight: 800;
   line-height: 16px;
   color: #BECDFF;
+  cursor: pointer;
 } 

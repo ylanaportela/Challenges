@@ -1,11 +1,11 @@
-@media (width: 1440px){
+@media (min-width: 1024px){
   body{
     background-color: #F9FAFF;
   }
 
   /* Section top*/
   .top{
-    padding-top: 4%;
+    padding-top: 3%;
   }
 
   .text{
@@ -24,10 +24,11 @@
   /*Section frame*/
 
   .frame{
-    height: 48%;
+    height: 50%;
     width: 40%;
     min-width: 30%;
     padding-top: 4%;
+    bottom: 20%;
   }
 
   .cost-monthly{
@@ -74,7 +75,32 @@
     padding: 0;
   }
 
+  hr{
+    margin: 0;
+  }
+
   .text-discount{
     display: block;
+  }
+
+  .services{
+    display: flex;
+    align-items: center;
+  }
+
+  ul{
+    width: 50%;
+  }
+  
+  li{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    text-align: left;
+  }
+
+  button{
+    width: 30%;
+    margin: 0 auto;
   }
 }
