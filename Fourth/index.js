@@ -7,66 +7,71 @@ window.onload = function (){
     const priceLabel = document.querySelector(".value-price .value");
     const inputTarget = document.querySelector(".range-slider")
     const progress = document.querySelector(".progress")
+    const checkbox = document.querySelector(".checkbox")
 
     const plans = {
       1: {
         pageViews: 10,
         views: 'K',
-        price: "8.00",
+        price: "8",
         inputBg: "0%"
       },
 
       2: {
         pageViews: 50,
         views: 'k',
-        price: "12.00",
+        price: "12",
         inputBg: "25%" 
       },
 
       3: {
         pageViews: 100,
         views: 'K',
-        price: "16.00",
+        price: "16",
         inputBg: "50%"
       },
 
       4: {
         pageViews: 150,
         views: 'K',
-        price: "24.00",
+        price: "24",
         inputBg: "75%"
       },
 
       5: {
         pageViews: 1,
         views: 'M',
-        price: "32.00",
+        price: "32",
         inputBg: "100%"
       }
     }
 
-    // existe um plano com esse valor que foi passado na função
+      // there is a plan with this value that was passed in the function
     if (plans[value] !== undefined) {
-      // a gente guarda esse plano existente numa variável para facilitar nossa vida
+      // we keep this existing plan in a variable to make our life easier
       const plan = plans[value]
-      // a gente faz quaisquer alterações que queiramos no plano selecionado
+      // we make any changes we want to the selected plan
       pageViewsLabel.innerHTML = plan.pageViews;
-      priceLabel.innerHTML = plan.price;
+      
+      if (checkbox.checked) {
+        priceLabel.innerHTML = plan.price * 0.25;
+      } else {
+        priceLabel.innerHTML = plan.price;
+      }
+
       pageView.innerHTML = plan.views;
       progress.style.width = plan.inputBg
 
 
-      document.querySelector(".slider").addEventListener('change',function(){
-
-        if(document.querySelector(".slider").checked == true){
+      checkbox.addEventListener('change', function (e) {
+        if (e.target.checked) {
           priceLabel.innerHTML = plan.price * 0.25;
         }
-
-        else{
+        else {
           priceLabel.innerHTML = plan.price;
         }
-        
       })
+
     }
   }
 
